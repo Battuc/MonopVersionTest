@@ -60,7 +60,7 @@ public class Interface {
             nbrj[i] = monopoly.lancerDe();
         }
         
-        for(int i=0; i<nbrJoueur; i++){
+        /*for(int i=0; i<nbrJoueur; i++){
             int maxi = 0; //  le nombre max des lancés de dés
             int jmax = 0; //  le joueur ayant le nombre max
             for(int j=0; j<nbrJoueur; j++){
@@ -72,6 +72,10 @@ public class Interface {
             nbrj[jmax] = 0; // met la valeur du lancé du joueur selectionné à 0
             System.out.println(nomj[jmax]);
             monopoly.nouveauJoueur(nomj[jmax]); // crée un joueur avec son nom
+        }*/
+        for (int i=0; i<nbrJoueur; i++){
+            monopoly.nouveauJoueur(nomj[i]);
+            System.out.println(nomj[i]);
         }
     }
 
