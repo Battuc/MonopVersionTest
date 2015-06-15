@@ -34,6 +34,8 @@ public class CarreauTirage extends CarreauAction {
             res = sc.nextInt();
             if (CarteChanceEnum.values()[res] == CarteChanceEnum.libere_prison){
                     this.getMonopoly().getJoueurCourant().setCarteChanceLibere(true);
+                    CarteChance chance = new CarteChance(getMonopoly(),CarteChanceEnum.libere_prison);
+                    chance.actionAEffectuer();
                 }
             else {
                 for (CarteChance chance : getMonopoly().getCartesChance()){
