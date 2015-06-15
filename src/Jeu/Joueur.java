@@ -128,7 +128,10 @@ public class Joueur {
         
         
         public int getNbCompagnie() {
-            return this.gares.size();
+            // Commentaire post-soutenance :
+            // On a repéré pourquoi le loyer n'est pas multiplié par 10 quand
+            // Le proprio a deux compagnies.
+            return this.gares.size(); 
         }
 	public void addCompagnie(Compagnie compagnie) {
             this.compagnies.add(compagnie);
